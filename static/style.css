@@ -1,0 +1,391 @@
+.kumbh-sans-header{
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+body{
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    font-weight: normal;
+    color: white;
+    background-color: #0C0D14;
+}
+
+
+
+/* header*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(12, 13, 20, 0.50);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;             
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 101px;
+
+}
+
+.head_item{
+    margin-right: 64px;
+    cursor: pointer;
+}
+
+.head_item:last-child{
+    margin-right: 0;
+}
+
+.header_link{
+
+    font-family: 'Kumbh Sans';
+    font-weight: 300;
+    font-size: 24px;
+    position: relative;
+    text-decoration: none;          
+    color: #838383;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.header_link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.header_link:hover::after,
+.header_link:focus::after {
+    width: 100%;
+}
+
+.header_link:hover {
+    color: #FFFFFF;
+}
+
+.sign-in {
+    margin-left: 348px;
+    background-color: white; 
+    width: 118px;           
+    height: 38px;      
+    color: #2C1E1E;                       
+    border-radius: 15px;  
+    font-family: 'Kumbh Sans';
+    font-weight: 800;        
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;            
+    transition: all 0.3s ease;   
+}
+
+.sign-in:hover {
+    background-color: #6337C9;  
+    color: white;                
+}
+
+/* header*/
+
+
+
+
+.wrapper{
+    max-width: 1153px;
+    margin: 0 auto;
+}
+
+
+
+/*main*/
+
+.main{
+
+    display: flex;
+    flex-direction: column;
+    background: url(../img/glow-eff.png);
+    background-position: center 8%;
+    background-size: contain;  
+    background-repeat: no-repeat;   
+}
+
+
+.background-container {
+    position: relative;
+    display: flex;
+    gap: 1793px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    background: url(../img/glow-eff.png);
+    background-position: center 145%;
+    background-size: contain;  
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+
+
+
+/*intro*/
+.intro{
+    min-height: 100vh;   
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 744px;
+}
+
+.mini_title{
+
+    font-weight: 200;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.title{
+
+    font-weight: 500;
+    font-size: 96px;
+    margin: 0%;
+}
+
+
+
+.hero_title{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 69px;
+    text-align: center;
+}
+
+.hero_text{
+    font-weight: 300;
+    font-size: 32px;
+    max-width: 1065px;
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.start_button{
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0.05), 
+    rgba(115, 115, 115, 0.05));
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    width: 297px;           
+    height: 86px;                            
+    border-radius: 200px;  
+    border: none;
+    outline: none;
+    cursor: pointer;  
+    border: 1px solid rgba(132, 120, 255, 0.3);
+    transition: all 0.3s ease; 
+    margin-bottom: 191px;
+    
+}
+.start_button:hover {
+    background-color: #14151b; 
+    border: 1px solid #6337C9; 
+    /* color: #B273FF;              */
+}
+/*intro*/
+
+
+
+/*preview*/
+.preview_title{
+
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.preview_cards{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 41px;
+    padding: 0 28px;
+    margin-bottom: 164px;
+}
+.preview_card{
+
+    grid-column: span 1;
+    background: rgb(0, 0, 0, 0,05);
+    border: 1px solid rgba(132, 120, 255, 0.3);
+    padding: 0 24px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 30px;
+}
+
+@media (max-width: 899px) {
+    .preview_cards {
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; /* можно еще уменьшить для телефонов */
+        padding: 0 16px;
+        margin-bottom: 100px;
+    }
+}
+
+.preview_card_title{
+
+    font-weight: 600;
+    font-size: 32px;
+
+}
+.preview_card_desc1{
+
+    max-width: 309px;
+    font-weight: 300;
+    font-size: 24px;
+
+}
+.preview_card_desc2{
+
+    max-width: 245px;
+    font-weight: 300;
+    font-size: 24px;
+
+}
+.preview_card_desc3{
+
+    max-width: 319px;
+    font-weight: 300;
+    font-size: 24px;
+
+}
+
+/*preview*/
+
+
+
+/*how to use*/
+.how_to_use_title{
+
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 175px;
+    text-align: center;
+
+}
+.steps{
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 50px;
+    max-width: 534px;
+}
+.steps:last-child{
+    margin-bottom: 200px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.try_button {
+
+    margin-top: 70px;
+    background-color: white; 
+    width: 180px;           
+    height: 49px;      
+    color: #2C1E1E;                       
+    border-radius: 15px;  
+    font-family: 'Kumbh Sans';
+    font-weight: 800;        
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;            
+    transition: all 0.3s ease; 
+    margin-bottom: 400px;
+
+}
+
+.try_button:hover{
+
+    background-color: #6337C9; 
+    color: white;
+
+}
+
+/*how to use*/
+
+
+
+.contact_title{
+
+    font-weight: 500;
+    margin-bottom: 34px;
+    font-size: 48px;
+    text-align: center;
+}
+.contact_desc{
+
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 67px;
+
+}
+
+/*main*/
